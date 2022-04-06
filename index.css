@@ -1,17 +1,183 @@
 body {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
     margin: 0%;
     width: 100%;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
+    display: inline-block;
     font-size: 16px;
-    background: url(stars.jpg) no-repeat center center fixed;
+    background: url(backgroundimagenews.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+
+header {
+    height: 5em;
+}
+
+.icon {
+    width: 3em;
+    margin: 0;
+    padding: 0;
+    transform: rotate(90);
+    filter: invert(30%);
+    filter: brightness(70%);
+}
+
+
+/* Navbar container */
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial;
+}
+
+
+/* Links inside the navbar */
+
+.navbar a {
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 12px 12px;
+    text-decoration: none;
+}
+
+
+/* The dropdown container */
+
+.dropdown {
+    overflow: hidden;
+}
+
+
+/* Dropdown button */
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 10px 10px;
+    background-color: inherit;
+    font-family: inherit;
+    /* Important for vertical align on mobile phones */
+    margin: 0;
+    /* Important for vertical align on mobile phones */
+}
+
+
+/* Add a background color to navbar links on hover */
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+    background-color: hsl(212, 94%, 40%);
+}
+
+
+/* Dropdown content (hidden by default) */
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(92, 91, 91);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+
+/* Links inside the dropdown */
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 14px 14px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+
+/* Add a grey background color to dropdown links on hover */
+
+.dropdown-content a:hover {
+    background-color: rgb(121, 117, 117);
+}
+
+
+/* Show the dropdown menu on hover */
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+li {
+    text-decoration: none;
+}
+
+nav:link,
+a:link {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p>a:link {
+    text-transform: lowercase;
+}
+
+a:visited {
+    background-color: rgb(170, 166, 166);
+    color: white;
+}
+
+.flexmain {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    align-items: left;
+    padding: 5px;
+}
+
+.flexcolumnsixty {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: start;
+    width: 50%;
+    margin: 5px;
+}
+
+.flexcolumnthirty {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: start;
+    width: 30%;
+    margin: 5px;
+}
+
+.flexrow {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: space-around;
+    width: 100%;
+    background-color: white;
+    border: solid 1px black;
+    margin: 5px;
+}
+
+p {
+    padding: 10px;
 }
 
 .spinner {
