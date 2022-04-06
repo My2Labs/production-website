@@ -1,0 +1,26 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    margin: 0%;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    font-size: 16px;
+    background: url(stars.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.spinner {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    align-items: center;
+    height: 10em;
+}
+
+.hidden {
+    display: none;
+}
