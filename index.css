@@ -13,7 +13,7 @@ body {
 }
 
 header {
-    height: 5em;
+    height: 5%;
 }
 
 .icon {
@@ -22,7 +22,7 @@ header {
     padding: 0;
     transform: rotate(90);
     filter: invert(30%);
-    filter: brightness(70%);
+    filter: brightness(90%);
 }
 
 
@@ -93,7 +93,7 @@ header {
 
 .dropdown-content a {
     float: none;
-    color: black;
+    color: white;
     padding: 14px 14px;
     text-decoration: none;
     display: block;
@@ -104,7 +104,7 @@ header {
 /* Add a grey background color to dropdown links on hover */
 
 .dropdown-content a:hover {
-    background-color: rgb(121, 117, 117);
+    background-color: rgb(180, 179, 179);
 }
 
 
