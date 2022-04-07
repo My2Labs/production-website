@@ -160,11 +160,15 @@ a:visited {
     flex-direction: column;
     justify-content: space-around;
     align-content: start;
-    width: 30%;
+    width: 40%;
     margin: 5px;
 }
 
-.flexrow {
+.flexrow,
+.flexrow1,
+.flexrow2,
+.flexrow3,
+.flexrow4 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -172,8 +176,11 @@ a:visited {
     align-content: space-around;
     width: 100%;
     background-color: white;
-    border: solid 1px black;
+    filter: opacity(.7);
+    border: solid 2px rgb(199, 197, 197);
     margin: 5px;
+    font-weight: 800;
+    padding: 10px;
 }
 
 p {
@@ -189,4 +196,8 @@ p {
 
 .hidden {
     display: none;
+}
+
+img {
+    width: 100%;
 }
