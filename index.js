@@ -66,7 +66,7 @@ fetch(newsApiUrl)
         console.log(response)
         const flexheader4 = document.querySelector(".flexheader4")
         const flexarticle4 = document.querySelector(".flexarticle4")
-        const article = response.articles[10]
+        const article = response.articles[11]
         flexheader4.append(article.title)
         flexarticle4.append(article.description)
         return article
