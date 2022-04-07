@@ -82,7 +82,7 @@ header {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: rgb(92, 91, 91);
+    background-color: white;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
@@ -93,7 +93,7 @@ header {
 
 .dropdown-content a {
     float: none;
-    color: white;
+    color: black;
     padding: 14px 14px;
     text-decoration: none;
     display: block;
@@ -131,7 +131,7 @@ p>a:link {
 
 a:visited {
     background-color: rgb(170, 166, 166);
-    color: rgb(193, 193, 204);
+    color: rgb(135, 135, 192);
 }
 
 .flexmain {
@@ -140,7 +140,7 @@ a:visited {
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: space-around;
-    align-items: left;
+    align-items: center;
     padding: 5px;
 }
 
@@ -150,7 +150,7 @@ a:visited {
     flex-direction: column;
     justify-content: space-around;
     align-content: start;
-    width: 50%;
+    width: 60%;
     margin: 5px;
 }
 
