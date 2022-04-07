@@ -16,6 +16,13 @@ header {
     height: 5%;
 }
 
+h1,
+h2,
+h3 {
+    text-align: center;
+    font-weight: bolder;
+}
+
 .icon {
     width: 3em;
     margin: 0;
@@ -183,6 +190,20 @@ a:visited {
     padding: 10px;
 }
 
+.flexcolumnform {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    background-color: white;
+    filter: opacity(.7);
+    border: solid 2px rgb(199, 197, 197);
+    margin: 5px;
+    font-weight: 800;
+    padding: 10px;
+}
+
 p {
     padding: 10px;
 }
@@ -200,4 +221,12 @@ p {
 
 img {
     width: 100%;
+}
+
+form,
+input,
+formp {
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
 }

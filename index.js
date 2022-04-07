@@ -15,13 +15,13 @@ fetch(newsApiUrl)
     }).then(response => {
         const fleximg1 = document.querySelector(".fleximg1")
         const img = document.createElement("img")
-        img.src = "https://scx2.b-cdn.net/gfx/news/hires/2022/scientists-have-spotte.jpg";
+        img.src = `${response.urlToImage}`;
         fleximg1.append(img)
         return img.src
     }).then(response => {
         const flexlink1 = document.querySelector(".flexlink1")
+            //flexlink1.href = `${response.url}`
         flexlink1.href = `https://phys.org/news/2022-04-scientists-farthest-galaxy.html`
-        flexlink1.append(flexlink1)
     })
 
 fetch(newsApiUrl)
@@ -36,13 +36,12 @@ fetch(newsApiUrl)
     }).then(response => {
         const fleximg2 = document.querySelector(".fleximg2")
         const img = document.createElement("img")
-        img.src = "https://scitechdaily.com/images/Ultra-Hot-Jupiter-Sized-Exoplanet-Illustration-scaled.jpg";
+        img.src = `${response.urlToImage}`;
         fleximg2.append(img)
         return img.src
     }).then(response => {
         const flexlink2 = document.querySelector(".flexlink2")
         flexlink2.href = `https://scitechdaily.com/raining-vaporized-rock-hubble-probes-bizarre-weather-conditions-on-sizzling-worlds/`
-        flexlink2.append(flexlink2)
     })
 
 
@@ -52,20 +51,19 @@ fetch(newsApiUrl)
         console.log(response)
         const flexheader3 = document.querySelector(".flexheader3")
         const flexarticle3 = document.querySelector(".flexarticle3")
-        const article = response.articles[4]
+        const article = response.articles[17]
         flexheader3.append(article.title)
         flexarticle3.append(article.description)
         return article
     }).then(response => {
         const fleximg3 = document.querySelector(".fleximg3")
         const img = document.createElement("img")
-        img.src = "https://cdn.mos.cms.futurecdn.net/3Qo3kH4SiFkkKwGhFVuXdJ-1200-80.jpg";
+        img.src = `${response.urlToImage}`;
         fleximg3.append(img)
         return img.src
     }).then(response => {
         const flexlink3 = document.querySelector(".flexlink3")
-        flexlink3.href = `https://www.space.com/spacex-crew-4-launch-delay-april-20`
-        flexlink3.append(flexlink3)
+        flexlink3.href = `https://lifehacker.com/when-to-see-aprils-full-pink-moon-at-peak-brilliance-1848752693`
     })
 
 
@@ -82,11 +80,10 @@ fetch(newsApiUrl)
     }).then(response => {
         const fleximg4 = document.querySelector(".fleximg4")
         const img = document.createElement("img")
-        img.src = "https://ichef.bbci.co.uk/news/1024/branded_news/14651/production/_124073538_tanis-1.jpg";
+        img.src = `${response.urlToImage}`;
         fleximg4.append(img)
         return img.src
     }).then(response => {
         const flexlink4 = document.querySelector(".flexlink4")
         flexlink4.href = ` https://www.bbc.com/news/science-environment-61013740`
-        flexlink4.append(flexlink4)
     })

@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Sharron's Site</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="index.css" />
+    <script defer src="index.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="dropdown">
+                <button class="dropbtn">
+                    <i class="fa fa-caret-down"><img src="menuicon.jpg" class="icon" alt="Menu drop down" /></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="index.html">Home</a>
+                    <a href="signup.html">Sign up!</a>
+                    <a href="page3.html">Page 3</a>
+                    <a href="page4.html">Page 4</a>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <br>
+    <div class="flexmain">
+
+
+        <div class="flexcolumnform">
+            <h2>Sign up for the latest in Science news delivered daily to your email!</h2>
+            <form>
+                <label for="first-name">First Name: </label>
+                <input type="text" name="first-name" id="first-name" />
+            </form>
+            <form>
+                <label for="last-name">Last Name: </label>
+                <input type="text" name="last-name" id="last-name" />
+            </form>
+            <form>
+                <label for="email">Email Address: </label>
+                <input type="email" name="email" id="email" />
+            </form>
+            <form>
+                <p class="formp">How often would you like to receive an update sent to your email?</p>
+                <input type="radio" id="daily" name="frequency" value="daily" />
+                <label for="daily">Daily</label>
+                <input type="radio" id="weekly" name="frequency" value="weekly" />
+                <label for="weekly">Weekly</label>
+                <input type="radio" id="monthly" name="frequency" value="monthly" />
+                <label for="monthly">Monthly</label>
+            </form>
+        </div>
+        <div class="flexcolumnform">
+            <form>
+                <input type="checkbox" id="acceptance" name="acceptance" required />
+                <label>Do you accept the <a href=termsandconditions.html target="_BLANK">Terms and conditions?</a></label>
+                <div>
+                    <input type="submit" value="Sign Me Up!" />
+                </div>
+            </form>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
