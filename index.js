@@ -1,30 +1,11 @@
 // newsapi.org api key: 1c411d3d57cf491aa3ed44f63fba5842
-//ET https://newsapi.org/v2/top-headlines?country=us&category=science&apiKey=1c411d3d57cf491aa3ed44f63fba5842
+//GET https://newsapi.org/v2/top-headlines?country=us&category=science&apiKey=1c411d3d57cf491aa3ed44f63fba5842
 
 const newsApiUrl = `https://newsapi.org/v2/top-headlines?country=us&category=science&apiKey=1c411d3d57cf491aa3ed44f63fba5842`
-    // const $articleTitles = document.querySelector(".articleheader1")
-    // const $articleDetails = document.querySelector(".article1")
-
-
-// function getArticles(articles) {
-//     const $articleTitles = document.createElement("h3")
-
-//     articleheader1.innerHTML = `
-
-//     `
-//     return $getArticles
-// }
-
-// const $articleTitles = document.querySelector(".articleheader1")
-// const $articleDetails = document.querySelector(".article1")
-// const div = document.createElement("div")
-// const body = document.querySelector("body")
-// body.append(div)
 
 fetch(newsApiUrl)
     .then(response => response.json())
     .then(response => {
-        console.log(response)
         const flexheader1 = document.querySelector(".flexheader1")
         const flexarticle1 = document.querySelector(".flexarticle1")
         const article = response.articles[0]
@@ -37,12 +18,15 @@ fetch(newsApiUrl)
         img.src = "https://scx2.b-cdn.net/gfx/news/hires/2022/scientists-have-spotte.jpg";
         fleximg1.append(img)
         return img.src
+    }).then(response => {
+        const flexlink1 = document.querySelector(".flexlink1")
+        flexlink1.href = ` https://phys.org/news/2022-04-scientists-farthest-galaxy.html`
+        flexlink1.append(flexlink1)
     })
 
 fetch(newsApiUrl)
     .then(response => response.json())
     .then(response => {
-        console.log(response)
         const flexheader2 = document.querySelector(".flexheader2")
         const flexarticle2 = document.querySelector(".flexarticle2")
         const article = response.articles[1]
@@ -55,13 +39,17 @@ fetch(newsApiUrl)
         img.src = "https://scitechdaily.com/images/Ultra-Hot-Jupiter-Sized-Exoplanet-Illustration-scaled.jpg";
         fleximg2.append(img)
         return img.src
+    }).then(response => {
+        const flexlink2 = document.querySelector(".flexlink2")
+        flexlink2.href = `https://scitechdaily.com/raining-vaporized-rock-hubble-probes-bizarre-weather-conditions-on-sizzling-worlds/`
+        flexlink2.append(flexlink2)
     })
+
 
 fetch(newsApiUrl)
     .then(response => response.json())
     .then(response => {
         console.log(response)
-        const flexrow3 = document.querySelector(".flexrow3")
         const flexheader3 = document.querySelector(".flexheader3")
         const flexarticle3 = document.querySelector(".flexarticle3")
         const article = response.articles[5]
@@ -74,7 +62,12 @@ fetch(newsApiUrl)
         img.src = "https://cdn.cnn.com/cnnnext/dam/assets/220406144219-asteroid-2022-gn1-super-tease.jpg";
         fleximg3.append(img)
         return img.src
+    }).then(response => {
+        const flexlink3 = document.querySelector(".flexlink3")
+        flexlink3.href = `https://www.cnn.com/2022/04/06/world/asteroid-2022-gn1-flyby-scn/index.html`
+        flexlink3.append(flexlink3)
     })
+
 
 fetch(newsApiUrl)
     .then(response => response.json())
@@ -92,12 +85,8 @@ fetch(newsApiUrl)
         img.src = "https://ichef.bbci.co.uk/news/1024/branded_news/14651/production/_124073538_tanis-1.jpg";
         fleximg4.append(img)
         return img.src
+    }).then(response => {
+        const flexlink4 = document.querySelector(".flexlink4")
+        flexlink4.href = ` https://www.bbc.com/news/science-environment-61013740`
+        flexlink4.append(flexlink4)
     })
-
-
-
-
-
-// }).then(response => {
-//         const titles = response.articles
-//         Promise.all(titles)
