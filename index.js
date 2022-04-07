@@ -22,6 +22,7 @@ fetch(newsApiUrl)
         const flexlink1 = document.querySelector(".flexlink1")
         flexlink1.href = `${response.url}`
             //flexlink1.href = `https://phys.org/news/2022-04-scientists-farthest-galaxy.html`
+        return response.url
     })
 
 fetch(newsApiUrl)
@@ -29,7 +30,7 @@ fetch(newsApiUrl)
     .then(response => {
         const flexheader2 = document.querySelector(".flexheader2")
         const flexarticle2 = document.querySelector(".flexarticle2")
-        const article = response.articles[2]
+        const article = response.articles[0]
         flexheader2.append(article.title)
         flexarticle2.append(article.description)
         return article
@@ -41,7 +42,8 @@ fetch(newsApiUrl)
         return img.src
     }).then(response => {
         const flexlink2 = document.querySelector(".flexlink2")
-        flexlink2.href = `https://scitechdaily.com/raining-vaporized-rock-hubble-probes-bizarre-weather-conditions-on-sizzling-worlds/`
+        flexlink2.href = `${response.url}`
+        return response.url
     })
 
 
@@ -63,7 +65,8 @@ fetch(newsApiUrl)
         return img.src
     }).then(response => {
         const flexlink3 = document.querySelector(".flexlink3")
-        flexlink3.href = `https://lifehacker.com/when-to-see-aprils-full-pink-moon-at-peak-brilliance-1848752693`
+        flexlink3.href = `${response.url}`
+        return response.url
     })
 
 
@@ -73,7 +76,7 @@ fetch(newsApiUrl)
         console.log(response)
         const flexheader4 = document.querySelector(".flexheader4")
         const flexarticle4 = document.querySelector(".flexarticle4")
-        const article = response.articles[6]
+        const article = response.articles[10]
         flexheader4.append(article.title)
         flexarticle4.append(article.description)
         return article
@@ -85,5 +88,6 @@ fetch(newsApiUrl)
         return img.src
     }).then(response => {
         const flexlink4 = document.querySelector(".flexlink4")
-        flexlink4.href = ` https://www.bbc.com/news/science-environment-61013740`
+        flexlink4.href = `${response.url}`
+        return response.url
     })
