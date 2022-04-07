@@ -17,12 +17,8 @@ fetch(newsApiUrl)
         const img = document.createElement("img")
         img.src = `${response.urlToImage}`;
         fleximg1.append(img)
-        return img.src
-    }).then(response => {
         const flexlink1 = document.querySelector(".flexlink1")
-        flexlink1.href = `${response.url}`
-            //flexlink1.href = `https://phys.org/news/2022-04-scientists-farthest-galaxy.html`
-        return response.url
+        flexlink1.href = response.url
     })
 
 fetch(newsApiUrl)
@@ -30,7 +26,7 @@ fetch(newsApiUrl)
     .then(response => {
         const flexheader2 = document.querySelector(".flexheader2")
         const flexarticle2 = document.querySelector(".flexarticle2")
-        const article = response.articles[0]
+        const article = response.articles[9]
         flexheader2.append(article.title)
         flexarticle2.append(article.description)
         return article
@@ -39,11 +35,8 @@ fetch(newsApiUrl)
         const img = document.createElement("img")
         img.src = `${response.urlToImage}`;
         fleximg2.append(img)
-        return img.src
-    }).then(response => {
         const flexlink2 = document.querySelector(".flexlink2")
-        flexlink2.href = `${response.url}`
-        return response.url
+        flexlink2.href = response.url
     })
 
 
@@ -53,7 +46,7 @@ fetch(newsApiUrl)
         console.log(response)
         const flexheader3 = document.querySelector(".flexheader3")
         const flexarticle3 = document.querySelector(".flexarticle3")
-        const article = response.articles[17]
+        const article = response.articles[3]
         flexheader3.append(article.title)
         flexarticle3.append(article.description)
         return article
@@ -62,11 +55,8 @@ fetch(newsApiUrl)
         const img = document.createElement("img")
         img.src = `${response.urlToImage}`;
         fleximg3.append(img)
-        return img.src
-    }).then(response => {
         const flexlink3 = document.querySelector(".flexlink3")
-        flexlink3.href = `${response.url}`
-        return response.url
+        flexlink3.href = response.url
     })
 
 
@@ -85,9 +75,6 @@ fetch(newsApiUrl)
         const img = document.createElement("img")
         img.src = `${response.urlToImage}`;
         fleximg4.append(img)
-        return img.src
-    }).then(response => {
         const flexlink4 = document.querySelector(".flexlink4")
-        flexlink4.href = `${response.url}`
-        return response.url
+        flexlink4.href = response.url
     })
