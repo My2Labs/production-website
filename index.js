@@ -20,8 +20,8 @@ fetch(newsApiUrl)
         return img.src
     }).then(response => {
         const flexlink1 = document.querySelector(".flexlink1")
-            //flexlink1.href = `${response.url}`
-        flexlink1.href = `https://phys.org/news/2022-04-scientists-farthest-galaxy.html`
+        flexlink1.href = `${response.url}`
+            //flexlink1.href = `https://phys.org/news/2022-04-scientists-farthest-galaxy.html`
     })
 
 fetch(newsApiUrl)
