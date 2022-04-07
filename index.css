@@ -41,9 +41,6 @@ h3 {
     font-family: Arial;
 }
 
-
-/* Links inside the navbar */
-
 .navbar a {
     font-size: 16px;
     color: white;
@@ -52,15 +49,9 @@ h3 {
     text-decoration: none;
 }
 
-
-/* The dropdown container */
-
 .dropdown {
     overflow: hidden;
 }
-
-
-/* Dropdown button */
 
 .dropdown .dropbtn {
     font-size: 16px;
@@ -70,21 +61,13 @@ h3 {
     padding: 10px 10px;
     background-color: inherit;
     font-family: inherit;
-    /* Important for vertical align on mobile phones */
     margin: 0;
-    /* Important for vertical align on mobile phones */
 }
-
-
-/* Add a background color to navbar links on hover */
 
 .navbar a:hover,
 .dropdown:hover .dropbtn {
     background-color: hsl(212, 94%, 40%);
 }
-
-
-/* Dropdown content (hidden by default) */
 
 .dropdown-content {
     display: none;
@@ -95,9 +78,6 @@ h3 {
     z-index: 1;
 }
 
-
-/* Links inside the dropdown */
-
 .dropdown-content a {
     float: none;
     color: black;
@@ -107,15 +87,9 @@ h3 {
     text-align: left;
 }
 
-
-/* Add a grey background color to dropdown links on hover */
-
 .dropdown-content a:hover {
     background-color: rgb(180, 179, 179);
 }
-
-
-/* Show the dropdown menu on hover */
 
 .dropdown:hover .dropdown-content {
     display: block;
