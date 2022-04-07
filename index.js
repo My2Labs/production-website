@@ -8,7 +8,7 @@ fetch(newsApiUrl)
     .then(response => {
         const flexheader1 = document.querySelector(".flexheader1")
         const flexarticle1 = document.querySelector(".flexarticle1")
-        const article = response.articles[0]
+        const article = response.articles[1]
         flexheader1.append(article.title)
         flexarticle1.append(article.description)
         return article
@@ -20,7 +20,7 @@ fetch(newsApiUrl)
         return img.src
     }).then(response => {
         const flexlink1 = document.querySelector(".flexlink1")
-        flexlink1.href = ` https://phys.org/news/2022-04-scientists-farthest-galaxy.html`
+        flexlink1.href = `https://phys.org/news/2022-04-scientists-farthest-galaxy.html`
         flexlink1.append(flexlink1)
     })
 
@@ -29,7 +29,7 @@ fetch(newsApiUrl)
     .then(response => {
         const flexheader2 = document.querySelector(".flexheader2")
         const flexarticle2 = document.querySelector(".flexarticle2")
-        const article = response.articles[1]
+        const article = response.articles[2]
         flexheader2.append(article.title)
         flexarticle2.append(article.description)
         return article
@@ -52,19 +52,19 @@ fetch(newsApiUrl)
         console.log(response)
         const flexheader3 = document.querySelector(".flexheader3")
         const flexarticle3 = document.querySelector(".flexarticle3")
-        const article = response.articles[5]
+        const article = response.articles[4]
         flexheader3.append(article.title)
         flexarticle3.append(article.description)
         return article
     }).then(response => {
         const fleximg3 = document.querySelector(".fleximg3")
         const img = document.createElement("img")
-        img.src = "https://cdn.cnn.com/cnnnext/dam/assets/220406144219-asteroid-2022-gn1-super-tease.jpg";
+        img.src = "https://cdn.mos.cms.futurecdn.net/3Qo3kH4SiFkkKwGhFVuXdJ-1200-80.jpg";
         fleximg3.append(img)
         return img.src
     }).then(response => {
         const flexlink3 = document.querySelector(".flexlink3")
-        flexlink3.href = `https://www.cnn.com/2022/04/06/world/asteroid-2022-gn1-flyby-scn/index.html`
+        flexlink3.href = `https://www.space.com/spacex-crew-4-launch-delay-april-20`
         flexlink3.append(flexlink3)
     })
 
