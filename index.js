@@ -66,7 +66,7 @@ fetch(newsApiUrl)
         console.log(response)
         const articleheader4 = document.querySelector(".articleheader4")
         const article4 = document.querySelector(".article4")
-        const article = response.articles[11]
+        const article = response.articles[7]
         articleheader4.append(article.title)
         article4.append(article.description)
         return article
