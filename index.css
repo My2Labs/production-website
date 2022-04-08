@@ -17,7 +17,6 @@ header {
 }
 
 h1,
-h2,
 h3 {
     text-align: center;
     font-weight: bolder;
@@ -158,28 +157,29 @@ a:visited {
     align-content: center;
     text-align: center;
     width: 30%;
-    background-color: rgb(67, 67, 67);
+    background-color: rgb(46, 45, 45);
     border: solid 2px rgb(199, 197, 197);
     margin: 5px;
     font-weight: 800;
     padding: 10px;
     color: white;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.flexrow>p,
-h2 {
+.flexrow>h2 {
     padding: 40px;
-    text-decoration: rgb(135, 135, 192);
+    color: white;
 }
 
 .flexrow>p {
     font-size: 20px;
+    padding: 30px;
 }
 
 p>a:link {
-    color: rgb(135, 135, 192);
+    color: rgb(186, 186, 242);
     text-decoration: underline;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .flexrow1,
@@ -193,7 +193,6 @@ p>a:link {
     align-content: space-around;
     width: 100%;
     background-color: white;
-    filter: opacity(.7);
     border: solid 2px rgb(93, 93, 93);
     margin: 5px;
     font-weight: 800;
