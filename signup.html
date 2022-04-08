@@ -6,7 +6,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="index.css" />
-    <script src="/signup.js" type="text/javascript"></script>
+    <link rel="subscribe" href="subscribe.php" />
+    <script defer src="/signup.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -27,36 +28,40 @@
     <div class="flexmain">
         <div class="flexcolumnform">
             <h2>Sign up for the latest in Science news delivered to your email!</h2>
-            <form class="firstname">
-                <label for="first-name">First Name: </label>
-                <input type="text" name="first-name" id="first-name" required/>
-            </form>
-            <form class="lastname">
-                <label for="last-name">Last Name: </label>
-                <input type="text" name="last-name" id="last-name" required />
-            </form>
-            <form class="emailaddress">
-                <label for="email">Email Address: </label>
-                <input type="email" name="email" id="email" required/>
-            </form>
-            <form class="frequency">
-                <p class="formp">How often would you like to receive an update sent to your email?</p>
-                <input type="radio" id="daily" name="frequency" value="daily" />
-                <label for="daily">Daily</label>
-                <input type="radio" id="weekly" name="frequency" value="weekly" />
-                <label for="weekly">Weekly</label>
-                <input type="radio" id="monthly" name="frequency" value="monthly" />
-                <label for="monthly">Monthly</label>
-            </form>
-        </div>
-        <div class="flexcolumnform">
-            <form class="acceptancecheck">
-                <input type="checkbox" id="acceptance" name="acceptance" required />
-                <label>Do you accept the <a href=termsandconditions.html target="_BLANK">Terms and conditions?</a></label>
-                <div>
-                    <input type="submit" id="submitbutton" value="Sign Me Up!" />
-                </div>
-            </form>
+            <div id="message">
+                <form action="subscribe.php" method="post" id="subscription">
+                    <div class="firstname">
+                        <label for="first-name">First Name: </label>
+                        <input type="text" name="first-name" id="first-name" required/>
+                    </div>
+                    <div class="lastname">
+                        <label for="last-name">Last Name: </label>
+                        <input type="text" name="last-name" id="last-name" required />
+                    </div>
+                    <div class="emailaddress">
+                        <label for="email">Email Address: </label>
+                        <input type="email" name="email" id="email" required/>
+                    </div>
+                    <div class="frequency">
+                        <p class="formp">How often would you like to receive an update sent to your email?</p>
+                        <input type="radio" id="daily" name="frequency" value="daily" />
+                        <label for="daily">Daily</label>
+                        <input type="radio" id="weekly" name="frequency" value="weekly" />
+                        <label for="weekly">Weekly</label>
+                        <input type="radio" id="monthly" name="frequency" value="monthly" />
+                        <label for="monthly">Monthly</label>
+                    </div>
+                </form>
+            </div>
+            <div class="flexcolumnform">
+                <form id="acceptancecheck">
+                    <input type="checkbox" id="acceptance" name="acceptance" required />
+                    <label>Do you accept the <a href=termsandconditions.html target="_BLANK">Terms and conditions?</a></label>
+                    <div>
+                        <button type="submit" id="submitbutton" value="Sign Me Up!" />Sign Me Up!</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
     </div>

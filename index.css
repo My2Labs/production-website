@@ -204,3 +204,12 @@ formp {
     margin: 10px;
     text-align: center;
 }
+
+button {
+    width: 100px;
+    height: 40px;
+    border-radius: 50px;
+    color: whitesmoke;
+    background-color: black;
+    margin: 20px;
+}
