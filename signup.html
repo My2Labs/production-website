@@ -27,19 +27,19 @@
     <div class="flexmain">
         <div class="flexcolumnform">
             <h2>Sign up for the latest in Science news delivered to your email!</h2>
-            <form>
+            <form class="firstname">
                 <label for="first-name">First Name: </label>
-                <input type="text" name="first-name" id="first-name" />
+                <input type="text" name="first-name" id="first-name" required/>
             </form>
-            <form>
+            <form class="lastname">
                 <label for="last-name">Last Name: </label>
-                <input type="text" name="last-name" id="last-name" />
+                <input type="text" name="last-name" id="last-name" required />
             </form>
-            <form>
+            <form class="emailaddress">
                 <label for="email">Email Address: </label>
-                <input type="email" name="email" id="email" />
+                <input type="email" name="email" id="email" required/>
             </form>
-            <form>
+            <form class="frequency">
                 <p class="formp">How often would you like to receive an update sent to your email?</p>
                 <input type="radio" id="daily" name="frequency" value="daily" />
                 <label for="daily">Daily</label>
@@ -50,11 +50,11 @@
             </form>
         </div>
         <div class="flexcolumnform">
-            <form>
+            <form class="acceptancecheck">
                 <input type="checkbox" id="acceptance" name="acceptance" required />
                 <label>Do you accept the <a href=termsandconditions.html target="_BLANK">Terms and conditions?</a></label>
                 <div>
-                    <input type="submit" value="Sign Me Up!" />
+                    <input type="submit" id="submitbutton" value="Sign Me Up!" />
                 </div>
             </form>
         </div>

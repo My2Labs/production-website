@@ -6,37 +6,37 @@ const newsApiUrl = `https://newsapi.org/v2/top-headlines?country=us&category=sci
 fetch(newsApiUrl)
     .then(response => response.json())
     .then(response => {
-        const flexheader1 = document.querySelector(".flexheader1")
-        const flexarticle1 = document.querySelector(".flexarticle1")
+        const articleheader1 = document.querySelector(".articleheader1")
+        const article1 = document.querySelector(".article1")
         const article = response.articles[1]
-        flexheader1.append(article.title)
-        flexarticle1.append(article.description)
+        articleheader1.append(article.title)
+        article1.append(article.description)
         return article
     }).then(response => {
-        const fleximg1 = document.querySelector(".fleximg1")
+        const articleimg1 = document.querySelector(".articleimg1")
         const img = document.createElement("img")
         img.src = `${response.urlToImage}`;
-        fleximg1.append(img)
-        const flexlink1 = document.querySelector(".flexlink1")
-        flexlink1.href = response.url
+        articleimg1.append(img)
+        const articlelink1 = document.querySelector(".articlelink1")
+        articlelink1.href = response.url
     })
 
 fetch(newsApiUrl)
     .then(response => response.json())
     .then(response => {
-        const flexheader2 = document.querySelector(".flexheader2")
-        const flexarticle2 = document.querySelector(".flexarticle2")
+        const articleheader2 = document.querySelector(".articleheader2")
+        const article2 = document.querySelector(".article2")
         const article = response.articles[9]
-        flexheader2.append(article.title)
-        flexarticle2.append(article.description)
+        articleheader2.append(article.title)
+        article2.append(article.description)
         return article
     }).then(response => {
-        const fleximg2 = document.querySelector(".fleximg2")
+        const articleimg2 = document.querySelector(".articleimg2")
         const img = document.createElement("img")
         img.src = `${response.urlToImage}`;
-        fleximg2.append(img)
-        const flexlink2 = document.querySelector(".flexlink2")
-        flexlink2.href = response.url
+        articleimg2.append(img)
+        const articlelink2 = document.querySelector(".articlelink2")
+        articlelink2.href = response.url
     })
 
 
@@ -44,19 +44,19 @@ fetch(newsApiUrl)
     .then(response => response.json())
     .then(response => {
         console.log(response)
-        const flexheader3 = document.querySelector(".flexheader3")
-        const flexarticle3 = document.querySelector(".flexarticle3")
+        const articleheader3 = document.querySelector(".articleheader3")
+        const article3 = document.querySelector(".article3")
         const article = response.articles[3]
-        flexheader3.append(article.title)
-        flexarticle3.append(article.description)
+        articleheader3.append(article.title)
+        article3.append(article.description)
         return article
     }).then(response => {
-        const fleximg3 = document.querySelector(".fleximg3")
+        const articleimg3 = document.querySelector(".articleimg3")
         const img = document.createElement("img")
         img.src = `${response.urlToImage}`;
-        fleximg3.append(img)
-        const flexlink3 = document.querySelector(".flexlink3")
-        flexlink3.href = response.url
+        articleimg3.append(img)
+        const articlelink3 = document.querySelector(".articlelink3")
+        articlelink3.href = response.url
     })
 
 
@@ -64,17 +64,17 @@ fetch(newsApiUrl)
     .then(response => response.json())
     .then(response => {
         console.log(response)
-        const flexheader4 = document.querySelector(".flexheader4")
-        const flexarticle4 = document.querySelector(".flexarticle4")
+        const articleheader4 = document.querySelector(".articleheader4")
+        const article4 = document.querySelector(".article4")
         const article = response.articles[11]
-        flexheader4.append(article.title)
-        flexarticle4.append(article.description)
+        articleheader4.append(article.title)
+        article4.append(article.description)
         return article
     }).then(response => {
-        const fleximg4 = document.querySelector(".fleximg4")
+        const articleimg4 = document.querySelector(".articleimg4")
         const img = document.createElement("img")
         img.src = `${response.urlToImage}`;
-        fleximg4.append(img)
-        const flexlink4 = document.querySelector(".flexlink4")
-        flexlink4.href = response.url
+        articleimg4.append(img)
+        const articlelink4 = document.querySelector(".articlelink4")
+        articlelink4.href = response.url
     })
