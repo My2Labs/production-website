@@ -1,7 +1,8 @@
 // newsapi.org api key: 1c411d3d57cf491aa3ed44f63fba5842
 //GET https://newsapi.org/v2/top-headlines?country=us&category=science&apiKey=1c411d3d57cf491aa3ed44f63fba5842
 
-const newsApiUrl = `https://newsapi.org/v2/top-headlines?country=us&category=science&apiKey=1c411d3d57cf491aa3ed44f63fba5842`
+const newsApiUrl = `https://sharron-news-api-proxy.herokuapp.com/`
+
 
 fetch(newsApiUrl)
     .then(response => response.json())
