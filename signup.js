@@ -1,48 +1,28 @@
-const div = document.querySelectorAll("div");
-const body = document.querySelectorAll("body");
-const form = document.querySelector('#subscription');
-const submitbutton = document.querySelector("#submitbutton");
-const messageEl = document.querySelector('#message');
+const button = document.querySelector("button");
+const submitButton = document.querySelector("#submitbutton")
+const subscription = document.querySelector("#subscription")
 
+subscription.addEventListener("submit", (event) => {
+    event.preventDefault();
 
-// form.addEventListener("submit", (event) => {
-//     event.preventDefault()
+    const formData = new FormData(event.target);
+    const firstName = formData.get("first-name");
+    const lastName = formData.get("last-name");
+    const email = formData.get("email");
+    const frequency = formData.get("frequency");
 
-//     const formData = new FormData(event.target)
-//     const firstName = formData.get(".firstname")
-//     const lastName = formData.get(".lastname")
-//     const email = formData.get(".emailaddress")
+    localStorage.setItem("first-name", firstName);
+    localStorage.setItem("last-name", lastName);
+    localStorage.setItem("email", email);
+    localStorage.setItem("frequency", email);
 
-//     console.log(firstName, lastName, email)
-//     event.target.reset()
-// })
-
-submitbutton.addEventListener("click", (e) => {
-    e.preventDefault();
-    subscribe();
-    console.log();
+    console.log(firstName, lastName, email, frequency);
 });
 
-
-const subscribe = async() => {
-    try {
-        let response = await fetch('/subscribe.php', {
-            method: 'POST',
-            body: new FormData(form),
-        });
-        const result = await response.json();
-
-        showMessage(result.message, response.status == 200 ? 'success' : 'error');
-
-    } catch (error) {
-        showMessage(error.message, 'error');
-    }
-};
-
-const showMessage = (message, type = 'success') => {
-    messageEl.innerHTML = `
-        <div class="alert alert-${type}">
-        ${message}
-        </div>
-    `;
-};
+console.log(
+    "Returned local storage:",
+    localStorage.getItem("first-name"),
+    localStorage.getItem("last-name"),
+    localStorage.getItem("last-name"),
+    localStorage.getItem("last-name")
+);
