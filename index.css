@@ -173,6 +173,10 @@ h2 {
     text-decoration: rgb(135, 135, 192);
 }
 
+.flexrow>p {
+    font-size: 20px;
+}
+
 p>a:link {
     color: rgb(135, 135, 192);
     text-decoration: underline;
@@ -190,7 +194,7 @@ p>a:link {
     width: 100%;
     background-color: white;
     filter: opacity(.7);
-    border: solid 2px rgb(199, 197, 197);
+    border: solid 2px rgb(93, 93, 93);
     margin: 5px;
     font-weight: 800;
     padding: 10px;
