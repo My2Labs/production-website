@@ -40,9 +40,6 @@ span {
     filter: brightness(90%);
 }
 
-
-/* Navbar container */
-
 .navbar {
     overflow: hidden;
     background-color: #333;
@@ -153,7 +150,34 @@ a:visited {
     margin: 5px;
 }
 
-.flexrow,
+.flexrow {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    width: 30%;
+    background-color: rgb(67, 67, 67);
+    border: solid 2px rgb(199, 197, 197);
+    margin: 5px;
+    font-weight: 800;
+    padding: 10px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.flexrow>p,
+h2 {
+    padding: 40px;
+    text-decoration: rgb(135, 135, 192);
+}
+
+p>a:link {
+    color: rgb(135, 135, 192);
+    text-decoration: underline;
+}
+
 .flexrow1,
 .flexrow2,
 .flexrow3,
