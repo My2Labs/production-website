@@ -9,7 +9,7 @@ fetch(newsApiUrl)
     .then(response => {
         const articleheader1 = document.querySelector('.articleheader1')
         const article1 = document.querySelector('.article1')
-        const article = response.articles[1]
+        const article = response.articles[0]
         articleheader1.append(article.title)
         article1.append(article.description)
         return article
@@ -30,7 +30,7 @@ fetch(newsApiUrl)
     .then(response => {
         const articleheader2 = document.querySelector('.articleheader2')
         const article2 = document.querySelector('.article2')
-        const article = response.articles[4]
+        const article = response.articles[1]
         articleheader2.append(article.title)
         article2.append(article.description)
         return article
@@ -50,7 +50,7 @@ fetch(newsApiUrl)
         console.log(response)
         const articleheader3 = document.querySelector('.articleheader3')
         const article3 = document.querySelector('.article3')
-        const article = response.articles[3]
+        const article = response.articles[2]
         articleheader3.append(article.title)
         article3.append(article.description)
         return article
@@ -70,7 +70,7 @@ fetch(newsApiUrl)
         console.log(response)
         const articleheader4 = document.querySelector('.articleheader4')
         const article4 = document.querySelector('.article4')
-        const article = response.articles[7]
+        const article = response.articles[3]
         articleheader4.append(article.title)
         article4.append(article.description)
         return article
