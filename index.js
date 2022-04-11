@@ -20,11 +20,10 @@ fetch(newsApiUrl)
         articleimg1.append(img)
         const articlelink1 = document.querySelector(".articlelink1")
         articlelink1.href = response.url
-    }).then(responses => {
+    }).forEach(articleimg => {
+        const spinner = document.querySelector(".spinner")
         spinner.classList.add("hidden")
-        responses.forEach(response => {
-            addCharacters(response)
-        })
+        main.append(articleimg)
     })
 
 fetch(newsApiUrl)
@@ -43,11 +42,6 @@ fetch(newsApiUrl)
         articleimg2.append(img)
         const articlelink2 = document.querySelector(".articlelink2")
         articlelink2.href = response.url
-    }).then(parsedResponses => {
-        spinner.classList.add("hidden")
-        parsedResponses.forEach(parsedResponse => {
-            addCharacters(parsedResponse)
-        })
     })
 
 
@@ -68,11 +62,6 @@ fetch(newsApiUrl)
         articleimg3.append(img)
         const articlelink3 = document.querySelector(".articlelink3")
         articlelink3.href = response.url
-    }).then(parsedResponses => {
-        spinner.classList.add("hidden")
-        parsedResponses.forEach(parsedResponse => {
-            addCharacters(parsedResponse)
-        })
     })
 
 
@@ -93,9 +82,4 @@ fetch(newsApiUrl)
         articleimg4.append(img)
         const articlelink4 = document.querySelector(".articlelink4")
         articlelink4.href = response.url
-    }).then(parsedResponses => {
-        spinner.classList.add("hidden")
-        parsedResponses.forEach(parsedResponse => {
-            addCharacters(parsedResponse)
-        })
     })
