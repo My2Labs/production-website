@@ -23,6 +23,7 @@ fetch(newsApiUrl)
         articlelink1.href = response.url
         spinner.classList.add('hidden')
         main.append(response)
+        href.setAttribute = ("href", "")
     })
 
 fetch(newsApiUrl)
@@ -42,6 +43,7 @@ fetch(newsApiUrl)
         articleimg2.append(img)
         const articlelink2 = document.querySelector('.articlelink2')
         articlelink2.href = response.url
+        href.setAttribute = ("href", "")
     })
 
 fetch(newsApiUrl)
@@ -62,6 +64,7 @@ fetch(newsApiUrl)
         articleimg3.append(img)
         const articlelink3 = document.querySelector('.articlelink3')
         articlelink3.href = response.url
+        href.setAttribute = ("href", "")
     })
 
 fetch(newsApiUrl)
@@ -82,4 +85,5 @@ fetch(newsApiUrl)
         articleimg4.append(img)
         const articlelink4 = document.querySelector('.articlelink4')
         articlelink4.href = response.url
+        href.setAttribute = ("href", "")
     })
