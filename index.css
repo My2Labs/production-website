@@ -227,8 +227,8 @@ p {
 .spinner {
     margin-top: 2em;
     margin-bottom: 2em;
-    align-items: center;
-    width: 200px;
+    text-align: center;
+    width: 400px;
 }
 
 .hidden {
