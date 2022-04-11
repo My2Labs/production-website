@@ -216,7 +216,8 @@ p>a:link {
 }
 
 p {
-    padding: 10px;
+    padding-left: 10em;
+    padding-right: 10em;
 }
 
 .spinner {
