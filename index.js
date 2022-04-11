@@ -17,6 +17,7 @@ fetch(newsApiUrl)
         const articleimg1 = document.querySelector('.articleimg1')
         const img = document.createElement('img')
         img.src = `${response.urlToImage}`
+        img.alt = "Article Image"
         articleimg1.append(img)
         const articlelink1 = document.querySelector('.articlelink1')
         articlelink1.href = response.url
@@ -37,6 +38,7 @@ fetch(newsApiUrl)
         const articleimg2 = document.querySelector('.articleimg2')
         const img = document.createElement('img')
         img.src = `${response.urlToImage}`
+        img.alt = "Article Image"
         articleimg2.append(img)
         const articlelink2 = document.querySelector('.articlelink2')
         articlelink2.href = response.url
@@ -56,6 +58,7 @@ fetch(newsApiUrl)
         const articleimg3 = document.querySelector('.articleimg3')
         const img = document.createElement('img')
         img.src = `${response.urlToImage}`
+        img.alt = "Article Image"
         articleimg3.append(img)
         const articlelink3 = document.querySelector('.articlelink3')
         articlelink3.href = response.url
@@ -75,6 +78,7 @@ fetch(newsApiUrl)
         const articleimg4 = document.querySelector('.articleimg4')
         const img = document.createElement('img')
         img.src = `${response.urlToImage}`
+        img.alt = "Article Image"
         articleimg4.append(img)
         const articlelink4 = document.querySelector('.articlelink4')
         articlelink4.href = response.url
