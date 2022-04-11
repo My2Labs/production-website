@@ -20,10 +20,8 @@ fetch(newsApiUrl)
         articleimg1.append(img)
         const articlelink1 = document.querySelector(".articlelink1")
         articlelink1.href = response.url
-    }).forEach(articleimg => {
-        const spinner = document.querySelector(".spinner")
         spinner.classList.add("hidden")
-        main.append(articleimg)
+        main.append(response)
     })
 
 fetch(newsApiUrl)
@@ -31,7 +29,7 @@ fetch(newsApiUrl)
     .then(response => {
         const articleheader2 = document.querySelector(".articleheader2")
         const article2 = document.querySelector(".article2")
-        const article = response.articles[9]
+        const article = response.articles[4]
         articleheader2.append(article.title)
         article2.append(article.description)
         return article

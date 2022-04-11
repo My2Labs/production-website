@@ -41,7 +41,7 @@ span {
 
 .navbar {
     overflow: hidden;
-    background-color: #028DF2;
+    background-color: black;
     font-family: Arial;
 }
 
@@ -223,7 +223,7 @@ p {
     margin-top: 2em;
     margin-bottom: 2em;
     align-items: center;
-    height: 10em;
+    width: 200px;
 }
 
 .hidden {
