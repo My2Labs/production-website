@@ -2,6 +2,7 @@ const button = document.querySelector("button");
 const submitButton = document.querySelector("#submitbutton")
 const subscription = document.querySelector("#subscription")
 
+
 subscription.addEventListener("submit", (event) => {
     event.preventDefault();
 
@@ -17,7 +18,7 @@ subscription.addEventListener("submit", (event) => {
     localStorage.setItem("frequency", email);
 
     console.log(firstName, lastName, email, frequency);
-});
+})
 
 console.log(
     "Returned local storage:",

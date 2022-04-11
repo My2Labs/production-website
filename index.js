@@ -2,7 +2,7 @@
 //GET https://newsapi.org/v2/top-headlines?country=us&category=science&apiKey=1c411d3d57cf491aa3ed44f63fba5842
 
 const newsApiUrl = `https://sharron-news-api-proxy.herokuapp.com/`
-
+const spinner = document.querySelector(".spinner")
 
 fetch(newsApiUrl)
     .then(response => response.json())
@@ -20,6 +20,11 @@ fetch(newsApiUrl)
         articleimg1.append(img)
         const articlelink1 = document.querySelector(".articlelink1")
         articlelink1.href = response.url
+    }).then(responses => {
+        spinner.classList.add("hidden")
+        responses.forEach(response => {
+            addCharacters(response)
+        })
     })
 
 fetch(newsApiUrl)
@@ -38,6 +43,11 @@ fetch(newsApiUrl)
         articleimg2.append(img)
         const articlelink2 = document.querySelector(".articlelink2")
         articlelink2.href = response.url
+    }).then(parsedResponses => {
+        spinner.classList.add("hidden")
+        parsedResponses.forEach(parsedResponse => {
+            addCharacters(parsedResponse)
+        })
     })
 
 
@@ -58,6 +68,11 @@ fetch(newsApiUrl)
         articleimg3.append(img)
         const articlelink3 = document.querySelector(".articlelink3")
         articlelink3.href = response.url
+    }).then(parsedResponses => {
+        spinner.classList.add("hidden")
+        parsedResponses.forEach(parsedResponse => {
+            addCharacters(parsedResponse)
+        })
     })
 
 
@@ -78,4 +93,9 @@ fetch(newsApiUrl)
         articleimg4.append(img)
         const articlelink4 = document.querySelector(".articlelink4")
         articlelink4.href = response.url
+    }).then(parsedResponses => {
+        spinner.classList.add("hidden")
+        parsedResponses.forEach(parsedResponse => {
+            addCharacters(parsedResponse)
+        })
     })
