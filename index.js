@@ -22,7 +22,6 @@ fetch(newsApiUrl)
         const articlelink1 = document.querySelector('.articlelink1')
         articlelink1.href = response.url
         spinner.classList.add('hidden')
-        main.append(response)
     })
 
 fetch(newsApiUrl)
