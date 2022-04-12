@@ -4,6 +4,7 @@
 const newsApiUrl = 'https://sharron-news-api-proxy.herokuapp.com/'
 const spinner = document.querySelector('.spinner')
 
+
 fetch(newsApiUrl)
     .then(response => response.json())
     .then(response => {
