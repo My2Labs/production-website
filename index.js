@@ -2,7 +2,6 @@
 // GET https://newsapi.org/v2/top-headlines?country=us&category=science&apiKey=1c411d3d57cf491aa3ed44f63fba5842
 //PARNELL HELPED ME WITH REFACTORING, AND HE DESERVES A MEDAL!
 
-
 const newsApiUrl = 'https://sharron-news-api-proxy.herokuapp.com/'
 const spinner = document.querySelector('.spinner')
 
@@ -26,7 +25,6 @@ function fetchArticle(url, index) {
             articleLink.href = response.url
             spinner.classList.add('hidden')
         })
-
 }
 
 function parseJson(response) {
