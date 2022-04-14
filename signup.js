@@ -21,6 +21,6 @@ console.log(
     'Returned local storage:',
     localStorage.getItem('first-name'),
     localStorage.getItem('last-name'),
-    localStorage.getItem('last-name'),
-    localStorage.getItem('last-name')
+    localStorage.getItem('email'),
+    localStorage.getItem('frequency')
 )
